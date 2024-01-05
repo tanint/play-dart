@@ -6,7 +6,7 @@ import 'package:play_dart/data/user/user.dart';
 
 Future<List<User>> fetchUsers() async {
   final url = Uri.parse(
-      'https://gist.githubusercontent.com/tanint/d93e3135eacae5e6944f6db379df4a75/raw/4b6fc8be901ed80e971c802899e55755df799543/users.json');
+      'https://gist.githubusercontent.com/tanint/d93e3135eacae5e6944f6db379df4a75/raw/4b6fc8be901ed80e971c802899e55755df799543/users.jsonz');
   final response = await http.get(url);
 
   if (response.statusCode == 200) {
